@@ -48,7 +48,8 @@
     font-size: 48px;
     width: max-content;
     margin: 0 auto 10px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #515151; }
   .wrap section h2::after {
     content: "";
     display: block;
@@ -125,9 +126,6 @@
       border: 1px solid #626262;
       border-radius: 3px;
       background-color: #4ec6ab; }
-    .wrap section.news figure figcaption button:hover {
-      animation: slide 3s linear infinite;
-      animation-direction: alternate; }
   .wrap section.news figure:last-of-type {
     margin-right: 0; }
 
