@@ -1,3 +1,6 @@
+body {
+  font-family: "OpenSans", sans-serif; }
+
 .clearfix::after {
   content: "";
   display: table;
@@ -7,131 +10,159 @@
   width: 1170px;
   margin: 0 auto;
   padding: 0 30px; }
-  .wrap header {
-    padding-bottom: 78px; }
-    .wrap header .logo {
-      float: left;
-      font-family: "Roboto";
-      font-size: 30px;
-      color: #515151;
-      text-transform: uppercase;
-      padding-top: 28px;
-      font-weight: 300; }
-    .wrap header .logo p::first-letter {
-      color: #1ABC9C;
-      font-weight: 900; }
-    .wrap header nav {
-      float: right;
-      padding-top: 38px; }
-      .wrap header nav ul {
-        list-style: none; }
-        .wrap header nav ul li:last-of-type {
-          margin-right: 0; }
-        .wrap header nav ul li {
-          float: left;
-          margin-right: 30px; }
-          .wrap header nav ul li a {
-            font: 14px "OpenSans";
-            font-weight: 700;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: #000; }
-          .wrap header nav ul li a:hover {
-            color: #1ABC9C; }
-          .wrap header nav ul li a:active {
-            color: white;
-            border-radius: 4px;
-            background-color: #0e876f; }
-  .wrap section h2 {
-    font-family: "Roboto";
+
+header {
+  padding-bottom: 78px; }
+  header .logo {
+    float: left;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    color: #515151;
+    text-transform: uppercase;
+    padding-top: 28px;
+    font-weight: 300; }
+  header .logo p::first-letter {
+    color: #1abc9c;
+    font-weight: 900; }
+  header nav {
+    float: right;
+    padding-top: 38px; }
+    header nav ul {
+      list-style: none; }
+      header nav ul li:last-of-type {
+        margin-right: 0; }
+      header nav ul li {
+        float: left;
+        margin-right: 26px; }
+        header nav ul li a {
+          font-family: "OpenSans", sans-serif;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #000; }
+        header nav ul li a:hover {
+          color: #1abc9c; }
+        header nav ul li a:active {
+          color: white;
+          border-radius: 4px;
+          background-color: #0e876f; }
+
+.products {
+  margin-bottom: 58px; }
+  .products h2 {
+    font-family: "Roboto", sans-serif;
     font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -1;
     width: max-content;
     margin: 0 auto 10px;
     text-transform: uppercase;
     color: #515151; }
-  .wrap section h2::after {
+  .products h2::after {
     content: "";
     display: block;
     width: 165px;
     height: 8px;
-    background-color: #1ABC9C;
-    margin: 10px auto 92px; }
-  .wrap section.products {
-    margin-bottom: 55px; }
-    .wrap section.products figure {
-      background-color: #e9f0fd;
-      width: 255px;
-      float: left;
-      margin: 0 30px 30px 0;
-      height: 322px;
-      overflow: hidden; }
-      .wrap section.products figure .a-img a {
-        cursor: pointer; }
-        .wrap section.products figure .a-img a img {
-          max-width: 100%; }
-      .wrap section.products figure figcaption {
-        height: 40px;
-        background-color: #323232; }
-        .wrap section.products figure figcaption a {
-          display: inline-block;
-          height: 100%;
-          width: 201px;
-          text-decoration: none;
-          font: 18px "Roboto";
-          color: #FFFFFF;
-          text-transform: uppercase;
-          padding: 8px 0 8px 14px; }
-        .wrap section.products figure figcaption .price {
-          font: 18px "Roboto";
-          line-height: 40px;
-          text-align: center;
-          float: right;
-          width: 54px;
-          color: white;
-          background-color: rgba(255, 255, 255, 0.44); }
-    .wrap section.products figure:nth-of-type(4n+4) {
-      margin-right: 0; }
-    .wrap section.products figure:hover figcaption {
-      background-color: #1ABC9C; }
-    .wrap section.products figure:hover {
-      border-radius: 5px;
-      filter: drop-shadow(2px 4px 6px green); }
-  .wrap section.news h2 {
-    color: #555252; }
-  .wrap section.news figure {
-    width: 350px;
-    float: left;
-    margin: 0 30px 0 0; }
-    .wrap section.news figure a {
-      cursor: pointer; }
-    .wrap section.news figure figcaption h4 {
-      font: 18px "OpenSans";
-      color: #555252;
-      padding: 15px 0; }
-    .wrap section.news figure figcaption h4::after {
-      content: "";
-      display: block;
-      width: 135px;
-      height: 3px;
-      background-color: #1ABC9C;
-      margin: 10px 0 5px 0; }
-    .wrap section.news figure figcaption p {
-      font: 14px "OpenSans";
-      color: #555252;
-      padding-bottom: 14px; }
-    .wrap section.news figure figcaption button {
-      cursor: pointer;
-      display: block;
-      width: 160px;
-      height: 50px;
-      font: 16px "Open Sans";
-      color: white;
-      text-transform: capitalize;
-      margin-bottom: 85px;
-      border: 1px solid #626262;
-      border-radius: 3px;
-      background-color: #4ec6ab; }
-  .wrap section.news figure:last-of-type {
-    margin-right: 0; }
+    background-color: #1abc9c;
+    margin: 10px auto 90px; }
+
+.products figure {
+  background-color: #e9f0fd;
+  width: 255px;
+  float: left;
+  margin: 0 30px 30px 0;
+  height: 322px;
+  overflow: hidden; }
+  .products figure .a-img a {
+    cursor: pointer; }
+    .products figure .a-img a img {
+      max-width: 100%; }
+  .products figure figcaption {
+    height: 40px;
+    background-color: #323232; }
+    .products figure figcaption a {
+      display: inline-block;
+      height: 100%;
+      width: 201px;
+      text-decoration: none;
+      font: 18px "Roboto";
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 8px 0 8px 14px; }
+
+.price {
+  font: 18px "Roboto", sans-serif;
+  line-height: 40px;
+  text-align: center;
+  float: right;
+  width: 54px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.44); }
+
+.products figure:nth-of-type(4n + 4) {
+  margin-right: 0; }
+
+.products figure:hover figcaption {
+  background-color: #1abc9c; }
+
+.news h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -1;
+  width: max-content;
+  margin: 0 auto 10px;
+  text-transform: uppercase;
+  color: #555252; }
+.news h2::after {
+  content: "";
+  display: block;
+  width: 165px;
+  height: 8px;
+  background-color: #1abc9c;
+  margin: 10px auto 80px; }
+.news figure {
+  width: 350px;
+  float: left;
+  margin: 0 30px 0 0; }
+  .news figure a {
+    cursor: pointer; }
+  .news figure figcaption h4 {
+    font-family: "OpenSans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #555252;
+    padding: 6px 0; }
+  .news figure figcaption h4::after {
+    content: "";
+    display: block;
+    width: 135px;
+    height: 3px;
+    background-color: #1abc9c;
+    margin: 10px 0 18px 0; }
+  .news figure figcaption p {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555252;
+    padding-bottom: 12px; }
+.news figure:last-of-type {
+  margin-right: 0; }
+
+.news__button {
+  cursor: pointer;
+  display: block;
+  width: 160px;
+  height: 50px;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 85px;
+  border-radius: 3px;
+  background-color: #4ec6ab; }
 
 /*# sourceMappingURL=style.css.map */
